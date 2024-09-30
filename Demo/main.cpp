@@ -1,7 +1,7 @@
 #include <QCoreApplication>
 #include <QDebug>
 #include <QFile>
-#include <qconsole.h>
+#include <libs/QConsole/qconsole.h>
 
 int main(int argc, char *argv[])
 {

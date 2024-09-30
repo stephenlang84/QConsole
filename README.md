@@ -1,5 +1,5 @@
 # QConsole
-A non-blocking Qt Style console class to easily handle stdin/out/err
+A non-blocking Qt Style console class to easily handle stdin/out/err. This is non-blocking, meaning it allows the program to continue executing other tasks while waiting for input or handling output, rather than pausing execution until the input/output operation completes. This is particularly useful in applications where responsiveness and performance are critical, as it prevents the user interface from freezing or becoming unresponsive during these operations.
 
 ## Features
 - Based on QIODevice to allow easy integration
@@ -9,14 +9,14 @@ A non-blocking Qt Style console class to easily handle stdin/out/err
 - Shortcut methods to create QFile instances to stdin/out/err
 
 ## Installation
-The package is provided via qdep, as `Skycoder42/QConsole`. To use it simply:
+<!-- The package is provided via qdep, as `Skycoder42/QConsole`. To use it simply:
 
 1. Install and enable qdep (See [qdep - Installing](https://github.com/Skycoder42/qdep#installation))
 2. Add the following to your pro file:
 ```qmake
 QDEP_DEPENDS += Skycoder42/QConsole
 !load(qdep):error("Failed to load qdep feature! Run 'qdep.py prfgen --qmake $$QMAKE_QMAKE' to create it.")
-```
+``` -->
 
 ## Example
 Usage of this package is fairly simple. Create a consol instance and use it as any other QIODevice. The following is basically the demo, a small app the echoes anything you enter:

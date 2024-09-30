@@ -1,15 +1,15 @@
 #ifndef QCONSOLE_H
 #define QCONSOLE_H
 
-#include <QtCore/QIODevice>
+#include <QIODevice>
 class QFile;
 #ifdef Q_OS_WIN
 class ReadThread;
 #else
-#include <QtCore/QSocketNotifier>
+#include <QSocketNotifier>
 #endif
 
-class Q_CONSOLE_EXPORT QConsole : public QIODevice
+class QConsole : public QIODevice
 {
 	Q_OBJECT
 

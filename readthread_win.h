@@ -1,8 +1,8 @@
 #ifndef READTHREAD_WIN_H
 #define READTHREAD_WIN_H
 
-#include <QtCore/QThread>
-#include <QtCore/QBuffer>
+#include <QThread>
+#include <QBuffer>
 
 class ReadThread : public QThread
 {
